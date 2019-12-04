@@ -1,0 +1,11 @@
+#calcular el importe de un articulo que comprara un cliente, considerando que tiene un 20% de descuento
+#y que se le aplicará un 15% de IVA, el dato de entrada será el importe del articulo y la salida
+#será el importe ya con el descuento e IVA aplicado.
+precio=int
+print("|---------------BIENVENIDO A TIENDA ISIR -------------|")
+while precio!=0:
+    precio=int(input("¿Cuál es el precio del articulo? "))
+    precioiva=precio+(precio*.15)
+    preciototal=precioiva-(precioiva*.20)
+    print("El precio de venta con IVA y el descuento es de ", preciototal, "pesos")
+print("|----------------VUELVA PRONTO-------------------------|")
