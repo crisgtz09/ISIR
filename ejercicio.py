@@ -32,10 +32,11 @@ while accion!=9:
             print("la suma de la fila", i+1, " es de ",fil)
     if accion==4:
         Col=int(input("¿Qué columna quieres?"))
+        Col = Col - 1
         for j in range(len(matriz)):
             for i in range(len(matriz)):
-                if Col == j+1:
-                    print(matriz[i][j])
+                if i == j:
+                        print(matriz[i][Col])                    
     if accion==5:
         Fil=int(input("¿Qué fila quieres? "))
         for i in range(len(matriz)):
@@ -43,6 +44,8 @@ while accion!=9:
                 print(matriz[i])
     if accion==6:
         FoC=input("¿Fila o columna? ")
+        if FoC!='fila' or FoC!='columna':
+            print("Ingrese un valor valido")
         if FoC=='columna':
             Col=int(input("¿Qué columna será? "))
             for i in range(columna):
